@@ -53,7 +53,6 @@ const Hero = () => {
             </h1>
             <div className="text-xl md:text-2xl text-muted-foreground space-y-2">
               <p className="gradient-accent-text font-semibold">Frontend & Full-Stack Developer</p>
-              <p>7th Semester IT Student | Hackathon Team Lead</p>
             </div>
           </div>
 
