@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 opacity-30"
         style={{
           backgroundImage: `url(${heroImage})`,
@@ -26,7 +26,7 @@ const Hero = () => {
           filter: 'blur(2px)'
         }}
       />
-      
+
       {/* Floating Emojis */}
       {floatingEmojis.map((item, index) => (
         <div
@@ -59,21 +59,21 @@ const Hero = () => {
 
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            I craft beautiful, responsive web experiences and lead teams to victory in hackathons. 
+            I craft beautiful, responsive web experiences and lead teams to victory in hackathons.
             Passionate about modern web technologies and creating solutions that matter.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-gradient-primary hover:opacity-90 transition-all duration-300 shadow-glow text-white border-0 rounded-xl px-8 py-6 text-lg font-semibold"
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
             >
               View Projects
             </Button>
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               size="lg"
               className="border-2 border-primary/30 hover:bg-primary/5 transition-all duration-300 rounded-xl px-8 py-6 text-lg font-semibold bg-transparent backdrop-blur-sm"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
@@ -85,20 +85,23 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex justify-center gap-6 pt-8">
             {[
-              { icon: Github, href: "#", label: "GitHub" },
-              { icon: Linkedin, href: "#", label: "LinkedIn" },
-              { icon: Mail, href: "#", label: "Email" },
+              { icon: Github, href: "https://github.com/damnthatsyoushreya", label: "GitHub" },   // ✅ updated
+              { icon: Linkedin, href: "https://www.linkedin.com/in/shreya-chaturvedi-ba1280218", label: "LinkedIn" },   // ✅ updated
+              { icon: Mail, href: "mailto:chaturvedi.d.shreya@gmail.com", label: "Email" },   // ✅ updated
             ].map(({ icon: Icon, href, label }) => (
               <a
                 key={label}
                 href={href}
                 className="p-3 rounded-xl glass-card hover:shadow-glow transition-all duration-300 group"
                 aria-label={label}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Icon className="w-6 h-6 text-primary group-hover:scale-110 transition-transform duration-300" />
               </a>
             ))}
           </div>
+
         </div>
       </div>
 
