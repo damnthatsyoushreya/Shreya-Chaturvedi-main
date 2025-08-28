@@ -87,11 +87,10 @@ const Experience = () => {
           {/* Timeline Items */}
           <div className="space-y-12">
             {experiences.map((exp, index) => (
-              <div 
-                key={exp.title} 
-                className={`relative flex items-center ${
-                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                } flex-col md:gap-8`}
+              <div
+                key={exp.title}
+                className={`relative flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                  } flex-col md:gap-8`}
               >
                 {/* Timeline Dot */}
                 <div className={`absolute left-4 md:left-1/2 w-8 h-8 rounded-full bg-gradient-to-r ${exp.color} flex items-center justify-center md:transform md:-translate-x-1/2 shadow-glow`}>
@@ -138,9 +137,9 @@ const Experience = () => {
                       {/* Skills */}
                       <div className="flex flex-wrap gap-2 pt-2">
                         {exp.skills.map((skill) => (
-                          <Badge 
-                            key={skill} 
-                            variant="secondary" 
+                          <Badge
+                            key={skill}
+                            variant="secondary"
                             className="text-xs bg-secondary/50 hover:bg-secondary transition-colors"
                           >
                             {skill}
@@ -158,13 +157,12 @@ const Experience = () => {
         {/* Stats Section */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-16 border-t border-border">
           {[
-            { number: "15+", label: "Projects Completed", icon: "🚀" },
-            { number: "5", label: "Hackathons Won", icon: "🏆" },
-            { number: "3", label: "Years Coding", icon: "💻" },
-            { number: "8", label: "Developers Mentored", icon: "👥" },
+            { number: "10+", label: "Projects Completed", icon: "🚀" },
+            { number: "1", label: "Hackathon Participated", icon: "🏆" },
+            { number: "5", label: "Years Coding", icon: "💻" }
           ].map((stat, index) => (
-            <div 
-              key={stat.label} 
+            <div
+              key={stat.label}
               className="text-center glass-card rounded-2xl p-6 hover:shadow-card transition-all duration-300"
             >
               <div className="text-2xl mb-2">{stat.icon}</div>
