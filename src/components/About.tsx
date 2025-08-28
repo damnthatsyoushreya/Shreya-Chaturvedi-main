@@ -75,11 +75,11 @@ const About = () => {
                 <p className="text-lg">
                   I'm <span className="text-primary font-semibold">Shreya</span>, a 7th Semester IT student with a passion for building modern web applications. I enjoy learning new technologies and applying them to real-world projects.
                 </p>
-                
+
                 <p>
                   I have experience participating in events like <span className="text-accent font-semibold">SIH 2024</span> and working on personal and freelance web development projects. These experiences helped me strengthen my problem-solving skills and collaborative abilities.
                 </p>
-                
+
                 <p>
                   Outside of coding, I enjoy exploring new technologies, contributing to open-source projects, and continuously improving my skills.
                 </p>
@@ -107,8 +107,8 @@ const About = () => {
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value) => (
-              <Card 
-                key={value.title} 
+              <Card
+                key={value.title}
                 className="glass-card border-0 hover:shadow-card transition-all duration-300 hover:-translate-y-1 group text-center p-6"
               >
                 <CardContent className="space-y-4 p-0">
@@ -128,18 +128,19 @@ const About = () => {
         </div>
 
         {/* Interests & Hobbies */}
+        {/* Interests & Hobbies */}
         <div className="glass-card rounded-2xl p-8">
           <h3 className="text-2xl font-bold text-center mb-8 gradient-text">
             Beyond Code: My Interests
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="flex justify-center gap-6 flex-nowrap overflow-x-auto">
             {interests.map((interest) => (
-              <div 
+              <div
                 key={interest.label}
                 className="flex flex-col items-center p-4 rounded-xl hover:bg-secondary/20 transition-all duration-300 group cursor-pointer"
               >
-                <interest.icon 
-                  className={`w-8 h-8 mb-2 ${interest.color} group-hover:scale-110 transition-transform duration-300`} 
+                <interest.icon
+                  className={`w-8 h-8 mb-2 ${interest.color} group-hover:scale-110 transition-transform duration-300`}
                 />
                 <span className="text-sm font-medium text-center group-hover:text-primary transition-colors">
                   {interest.label}
@@ -147,13 +148,14 @@ const About = () => {
               </div>
             ))}
           </div>
-          
+
           <div className="mt-8 text-center">
             <Badge className="bg-gradient-accent text-accent-foreground border-0 px-6 py-2 text-sm font-semibold">
               Always learning, always growing 🌱
             </Badge>
           </div>
         </div>
+
       </div>
     </section>
   );
