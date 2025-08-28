@@ -1,17 +1,19 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Heart, Coffee, Music, BookOpen, Camera, Gamepad2 } from "lucide-react";
+import { Heart, Music, BookOpen, Camera, Gamepad2, Flower } from "lucide-react";
 import profileImage from "@/assets/profile.jpg";
 
 const About = () => {
   const interests = [
-    { icon: Coffee, label: "Coffee Enthusiast", color: "text-amber-500" },
-    { icon: Music, label: "Music Lover", color: "text-purple-500" },
+    { icon: Gamepad2, label: "Gaming", color: "text-red-500" },
+    { icon: Music, label: "Music", color: "text-purple-500" },
     { icon: BookOpen, label: "Continuous Learning", color: "text-blue-500" },
     { icon: Camera, label: "Photography", color: "text-green-500" },
-    { icon: Gamepad2, label: "Gaming", color: "text-red-500" },
-    { icon: Heart, label: "Open Source", color: "text-pink-500" },
+    { icon: Flower, label: "Open Source", color: "text-pink-500" },
+    { icon: Heart, label: "Dog Lover", color: "text-amber-500" },
+    { icon: Gamepad2, label: "Gym", color: "text-orange-500" }, // optional if you want gym separate
   ];
+
 
   const values = [
     {
