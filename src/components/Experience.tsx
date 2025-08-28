@@ -5,65 +5,70 @@ import { Trophy, Users, Code, Zap } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      year: "2024",
-      title: "Hackathon Team Lead",
-      organization: "Multiple Hackathons",
-      type: "Leadership",
-      description: "Led cross-functional teams of 4-6 developers in various hackathons, consistently delivering innovative solutions within 24-48 hour timeframes.",
+      year: "2024 – Present",
+      title: "Front End Developer (Part Time)",
+      organization: "Smart Tech Info Craft, Ahmedabad",
+      type: "Work",
+      description:
+        "Converted UI/UX designs into responsive HTML, CSS, and Bootstrap layouts. Ensured cross-browser compatibility and collaborated with the design team to maintain visual integrity.",
       achievements: [
-        "🥇 Winner at TechFest 2024 - AI-powered study assistant",
-        "🥈 2nd Place at CodeRush - Sustainable tech solution",
-        "🏆 Best UI/UX at InnovateFest - Social impact platform"
+        "Developed responsive interfaces with optimized performance",
+        "Maintained brand consistency across multiple projects",
+        "Improved cross-browser compatibility and speed"
       ],
-      skills: ["Team Leadership", "Project Management", "Rapid Prototyping", "Presentation"],
-      icon: Trophy,
-      color: "from-yellow-500 to-orange-500"
-    },
-    {
-      year: "2023-2024",
-      title: "Full-Stack Developer Intern",
-      organization: "TechStartup Inc.",
-      type: "Internship",
-      description: "Developed and maintained web applications using React, Node.js, and MongoDB. Collaborated with senior developers on client projects.",
-      achievements: [
-        "Improved application performance by 40%",
-        "Built responsive components used by 10K+ users",
-        "Implemented automated testing reducing bugs by 60%"
-      ],
-      skills: ["React", "Node.js", "MongoDB", "Testing", "Agile"],
+      skills: ["HTML", "CSS", "Bootstrap", "UI/UX", "Collaboration"],
       icon: Code,
-      color: "from-blue-500 to-purple-500"
+      color: "from-green-500 to-teal-500",
     },
     {
       year: "2023",
-      title: "Frontend Developer",
-      organization: "College Tech Club",
-      type: "Volunteer",
-      description: "Led the development of the college's official website and event management system, managing a team of junior developers.",
+      title: "Full Stack Intern",
+      organization: "NextGen Solutions, Ahmedabad",
+      type: "Internship",
+      description:
+        "Built and developed websites using HTML, CSS, Bootstrap, JavaScript, and Django. Worked across both front-end and back-end with a focus on responsiveness and user experience.",
       achievements: [
-        "Built college website serving 5000+ students",
-        "Mentored 8 junior developers",
-        "Organized 3 successful coding workshops"
+        "Delivered 3+ responsive client websites",
+        "Collaborated on debugging and testing features",
+        "Optimized site performance for multi-device support"
       ],
-      skills: ["React", "Leadership", "Mentoring", "UI/UX Design"],
-      icon: Users,
-      color: "from-green-500 to-teal-500"
+      skills: ["JavaScript", "Django", "Bootstrap", "Testing", "Agile"],
+      icon: Zap,
+      color: "from-blue-500 to-purple-500",
     },
     {
-      year: "2022-2023",
-      title: "Web Development Projects",
-      organization: "Freelance & Personal",
-      type: "Projects",
-      description: "Worked on various personal and freelance projects to build portfolio and gain real-world experience in web development.",
+      year: "2024",
+      title: "Smart India Hackathon – Team Lead",
+      organization: "Delhi Transport Corporation Project",
+      type: "Hackathon",
+      description:
+        "Led a team to develop 'Yatra', an Automated Bus Scheduling & Route Management System. Proposed dynamic route adjustments during emergencies and eco-friendly route optimization.",
       achievements: [
-        "Completed 5+ client projects with 100% satisfaction",
-        "Built 10+ personal projects exploring different technologies",
-        "Contributed to 3 open-source projects"
+        "Selected and approved for SIH 2024",
+        "Developed real-world transport solution prototype",
+        "Led cross-functional hackathon team to success"
       ],
-      skills: ["JavaScript", "CSS", "Git", "Client Communication"],
-      icon: Zap,
-      color: "from-pink-500 to-rose-500"
-    }
+      skills: ["Leadership", "Project Management", "Problem-Solving", "UI/UX"],
+      icon: Trophy,
+      color: "from-yellow-500 to-orange-500",
+    },
+    {
+      year: "2022 – 2024",
+      title: "Freelance & Academic Projects",
+      organization: "Personal / Academic",
+      type: "Projects",
+      description:
+        "Worked on freelance and academic projects to strengthen portfolio and practical skills in full-stack development and UI/UX design.",
+      achievements: [
+        "Way To Interior – platform connecting clients with designers",
+        "Single Page Application – authentication & data fetching",
+        "Abyss Skills – e-learning platform with offline access",
+        "App Clone – social media prototype in Figma"
+      ],
+      skills: ["React.js", "JavaScript", "MySQL", "Figma", "Problem-Solving"],
+      icon: Users,
+      color: "from-pink-500 to-rose-500",
+    },
   ];
 
   return (
@@ -75,34 +80,41 @@ const Experience = () => {
             Experience & Achievements
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            My journey through hackathons, internships, and projects that shaped me as a developer and leader
+            My journey through internships, part-time roles, hackathons, and projects that shaped my career in technology.
           </p>
         </div>
 
         {/* Timeline */}
         <div className="relative">
-          {/* Timeline Line */}
           <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gradient-primary md:transform md:-translate-x-1/2"></div>
 
-          {/* Timeline Items */}
           <div className="space-y-12">
             {experiences.map((exp, index) => (
               <div
                 key={exp.title}
-                className={`relative flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                  } flex-col md:gap-8`}
+                className={`relative flex items-center ${
+                  index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                } flex-col md:gap-8`}
               >
                 {/* Timeline Dot */}
-                <div className={`absolute left-4 md:left-1/2 w-8 h-8 rounded-full bg-gradient-to-r ${exp.color} flex items-center justify-center md:transform md:-translate-x-1/2 shadow-glow`}>
+                <div
+                  className={`absolute left-4 md:left-1/2 w-8 h-8 rounded-full bg-gradient-to-r ${exp.color} flex items-center justify-center md:transform md:-translate-x-1/2 shadow-glow`}
+                >
                   <exp.icon className="w-4 h-4 text-white" />
                 </div>
 
                 {/* Content Card */}
-                <div className={`w-full md:w-5/12 ml-16 md:ml-0 ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
+                <div
+                  className={`w-full md:w-5/12 ml-16 md:ml-0 ${
+                    index % 2 === 0 ? "md:text-right" : "md:text-left"
+                  }`}
+                >
                   <Card className="glass-card border-0 shadow-card hover:shadow-glow transition-all duration-300 group">
                     <CardHeader className="pb-4">
                       <div className="flex items-center gap-2 mb-2">
-                        <Badge className={`bg-gradient-to-r ${exp.color} text-white border-0 font-semibold`}>
+                        <Badge
+                          className={`bg-gradient-to-r ${exp.color} text-white border-0 font-semibold`}
+                        >
                           {exp.year}
                         </Badge>
                         <Badge variant="outline" className="text-xs">
@@ -122,9 +134,10 @@ const Experience = () => {
                         {exp.description}
                       </p>
 
-                      {/* Achievements */}
                       <div className="space-y-2">
-                        <h4 className="font-semibold text-sm text-primary">Key Achievements:</h4>
+                        <h4 className="font-semibold text-sm text-primary">
+                          Key Achievements:
+                        </h4>
                         <ul className="space-y-1 text-sm">
                           {exp.achievements.map((achievement, i) => (
                             <li key={i} className="text-muted-foreground">
@@ -134,7 +147,6 @@ const Experience = () => {
                         </ul>
                       </div>
 
-                      {/* Skills */}
                       <div className="flex flex-wrap gap-2 pt-2">
                         {exp.skills.map((skill) => (
                           <Badge
@@ -155,13 +167,12 @@ const Experience = () => {
         </div>
 
         {/* Stats Section */}
-        {/* Stats Section */}
         <div className="flex justify-center mt-16 pt-16 border-t border-border">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {[
-              { number: "10+", label: "Projects Completed", icon: "🚀" },
-              { number: "1", label: "Hackathon Participated", icon: "🏆" },
-              { number: "5", label: "Years Coding", icon: "💻" }
+              { number: "4+", label: "Major Projects", icon: "🚀" },
+              { number: "1", label: "National Hackathon", icon: "🏆" },
+              { number: "2+", label: "Work Experiences", icon: "💻" },
             ].map((stat) => (
               <div
                 key={stat.label}
@@ -178,7 +189,6 @@ const Experience = () => {
             ))}
           </div>
         </div>
-
       </div>
     </section>
   );
