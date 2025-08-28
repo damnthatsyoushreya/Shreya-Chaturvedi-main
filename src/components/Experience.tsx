@@ -155,26 +155,30 @@ const Experience = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-16 border-t border-border">
-          {[
-            { number: "10+", label: "Projects Completed", icon: "🚀" },
-            { number: "1", label: "Hackathon Participated", icon: "🏆" },
-            { number: "5", label: "Years Coding", icon: "💻" }
-          ].map((stat, index) => (
-            <div
-              key={stat.label}
-              className="text-center glass-card rounded-2xl p-6 hover:shadow-card transition-all duration-300"
-            >
-              <div className="text-2xl mb-2">{stat.icon}</div>
-              <div className="text-2xl md:text-3xl font-bold gradient-text mb-1">
-                {stat.number}
+        {/* Stats Section */}
+        <div className="flex justify-center mt-16 pt-16 border-t border-border">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+            {[
+              { number: "10+", label: "Projects Completed", icon: "🚀" },
+              { number: "1", label: "Hackathon Participated", icon: "🏆" },
+              { number: "5", label: "Years Coding", icon: "💻" }
+            ].map((stat) => (
+              <div
+                key={stat.label}
+                className="text-center glass-card rounded-2xl p-6 hover:shadow-card transition-all duration-300"
+              >
+                <div className="text-2xl mb-2">{stat.icon}</div>
+                <div className="text-2xl md:text-3xl font-bold gradient-text mb-1">
+                  {stat.number}
+                </div>
+                <div className="text-sm text-muted-foreground">
+                  {stat.label}
+                </div>
               </div>
-              <div className="text-sm text-muted-foreground">
-                {stat.label}
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
+
       </div>
     </section>
   );
