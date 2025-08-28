@@ -58,7 +58,7 @@ const Hero = () => {
 
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-  Hi! I build modern web applications with clean and efficient code. I enjoy learning new technologies and recently participated in SIH 2024, where I collaborated with peers to solve real-world tech challenges.
+  I build modern web applications with clean and efficient code. I enjoy learning new technologies and recently participated in SIH 2024, where I collaborated with peers to solve real-world tech challenges.
 </p>
 
 
