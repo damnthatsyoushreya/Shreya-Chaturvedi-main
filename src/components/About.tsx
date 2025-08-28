@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Heart, Music, BookOpen, Camera, Dumbbell, Flower } from "lucide-react";
+import { Heart, Music, BookOpen, Camera, Dumbbell, Flower, Gamepad2 } from "lucide-react";
 import profileImage from "@/assets/profile.jpg";
 
 const About = () => {
