@@ -53,7 +53,7 @@ const Experience = () => {
       color: "from-yellow-500 to-orange-500",
     },
     {
-      year: "2022 – 2024",
+      year: "2022",
       title: "Freelance & Academic Projects",
       organization: "Personal / Academic",
       type: "Projects",
