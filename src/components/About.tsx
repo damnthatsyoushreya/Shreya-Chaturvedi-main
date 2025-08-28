@@ -15,7 +15,7 @@ const About = () => {
 
   const values = [
     {
-      title: "Shreya hello",
+      title: "Innovation FirstT",
       description: "Always seeking creative solutions to complex problems",
       emoji: "💡"
     },
