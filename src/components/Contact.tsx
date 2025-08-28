@@ -16,51 +16,44 @@ const Contact = () => {
   });
   const { toast } = useToast();
 
-  const contactInfo = [
+const contactInfo = [
     {
       icon: Mail,
       label: "Email",
-      value: "shreya.developer@gmail.com",
-      href: "mailto:shreya.developer@gmail.com",
+      value: "chaturvedi.d.shreya@gmail.com",  
+      href: "mailto:chaturvedi.d.shreya@gmail.com",
       color: "text-blue-500"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+91 98765 43210",
-      href: "tel:+919876543210",
+      value: "7862082847",  
+      href: "tel:7862082847",
       color: "text-green-500"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "Mumbai, India",
+      value: "Ahmedabad, India",   
       href: "#",
       color: "text-red-500"
     }
   ];
 
-  const socialLinks = [
+const socialLinks = [
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/shreya-dev",
-      username: "@shreya-dev",
+      href: "https://github.com/damnthatsyoushreya",  
+      username: "@damnthatsyoushreya",
       color: "hover:text-gray-600"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/shreya-dev",
-      username: "shreya-dev",
+      href: "https://www.linkedin.com/in/shreya-chaturvedi-ba1280218?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",   // ✅ updated
+      username: "shreya-chaturvedi",
       color: "hover:text-blue-600"
-    },
-    {
-      icon: Twitter,
-      label: "Twitter",
-      href: "https://twitter.com/shreya_codes",
-      username: "@shreya_codes",
-      color: "hover:text-blue-400"
     }
   ];
 
