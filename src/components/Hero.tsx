@@ -58,9 +58,9 @@ const Hero = () => {
 
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            I craft beautiful, responsive web experiences and lead teams to victory in hackathons.
-            Passionate about modern web technologies and creating solutions that matter.
-          </p>
+  Hi! I build modern web applications with clean and efficient code. I enjoy learning new technologies and recently participated in SIH 2024, where I collaborated with peers to solve real-world tech challenges.
+</p>
+
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
