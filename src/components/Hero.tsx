@@ -85,9 +85,9 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex justify-center gap-6 pt-8">
             {[
-              { icon: Github, href: "https://github.com/damnthatsyoushreya", label: "GitHub" },   // ✅ updated
-              { icon: Linkedin, href: "https://www.linkedin.com/in/shreya-chaturvedi-ba1280218", label: "LinkedIn" },   // ✅ updated
-              { icon: Mail, href: "mailto:chaturvedi.d.shreya@gmail.com", label: "Email" },   // ✅ updated
+              { icon: Github, href: "https://github.com/damnthatsyoushreya", label: "GitHub" },  
+              { icon: Linkedin, href: "https://www.linkedin.com/in/shreya-chaturvedi-ba1280218", label: "LinkedIn" },  
+              { icon: Mail, href: "mailto:chaturvedi.d.shreya@gmail.com", label: "Email" },  
             ].map(({ icon: Icon, href, label }) => (
               <a
                 key={label}
