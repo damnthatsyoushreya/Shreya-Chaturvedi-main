@@ -150,15 +150,6 @@ const Experience = () => {
                     </CardContent>
                   </Card>
                 </div>
-
-                {/* Year Display for larger screens */}
-                <div className="hidden md:block md:w-2/12">
-                  <div className={`text-2xl font-bold text-primary/70 ${
-                    index % 2 === 0 ? 'text-left' : 'text-right'
-                  }`}>
-                    {exp.year}
-                  </div>
-                </div>
               </div>
             ))}
           </div>
