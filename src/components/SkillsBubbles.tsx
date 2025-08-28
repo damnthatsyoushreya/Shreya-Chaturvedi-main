@@ -8,10 +8,8 @@ const SkillsBubbles = () => {
     { name: "JavaScript", icon: "⚡", color: "from-yellow-400 to-orange-500" },
     { name: "Python", icon: "🐍", color: "from-blue-500 to-yellow-500" },
     { name: "Git", icon: "📚", color: "from-orange-500 to-red-500" },
-    { name: "AWS", icon: "☁️", color: "from-orange-400 to-yellow-500" },
-    { name: "Docker", icon: "🐳", color: "from-blue-400 to-blue-600" },
     { name: "PostgreSQL", icon: "🐘", color: "from-blue-700 to-indigo-800" },
-    { name: "Redis", icon: "🔴", color: "from-red-500 to-pink-500" },
+
   ];
 
   return (
