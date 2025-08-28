@@ -15,7 +15,7 @@ const About = () => {
 
   const values = [
     {
-      title: "Innovation FirstT",
+      title: "Innovation First",
       description: "Always seeking creative solutions to complex problems",
       emoji: "💡"
     },
@@ -45,13 +45,13 @@ const About = () => {
             About Me
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Get to know the person behind the code - my journey, values, and what drives my passion for technology
+            Get to know the person behind the code – my journey, values, and passion for technology
           </p>
         </div>
 
         {/* Main About Content */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-          {/* Profile Image & Quick Info */}
+          {/* Profile Image */}
           <div className="relative">
             <div className="relative mx-auto w-80 h-80 lg:w-96 lg:h-96">
               <div className="absolute inset-0 bg-gradient-primary rounded-full animate-pulse opacity-20"></div>
@@ -71,23 +71,15 @@ const About = () => {
             <div className="glass-card rounded-2xl p-8 space-y-6">
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p className="text-lg">
-                  Hey there! I'm <span className="text-primary font-semibold">Shreya</span>, 
-                  a passionate developer currently in my 7th semester of IT studies. My journey into tech 
-                  began with curiosity and has evolved into a deep love for creating digital experiences 
-                  that make a difference.
+                  I'm <span className="text-primary font-semibold">Shreya</span>, a 7th Semester IT student with a passion for building modern web applications. I enjoy learning new technologies and applying them to real-world projects.
                 </p>
                 
                 <p>
-                  What sets me apart is my experience as a <span className="text-accent font-semibold">hackathon team leader</span>. 
-                  I've led teams to victory in multiple competitions, turning wild ideas into working prototypes 
-                  in record time. These experiences taught me that the best solutions come from diverse perspectives 
-                  working together.
+                  I have experience participating in events like <span className="text-accent font-semibold">SIH 2024</span> and working on personal and freelance web development projects. These experiences helped me strengthen my problem-solving skills and collaborative abilities.
                 </p>
                 
                 <p>
-                  When I'm not coding, you'll find me exploring new technologies, mentoring fellow developers, 
-                  or planning the next hackathon strategy. I believe in <span className="text-success font-semibold">learning by doing</span> 
-                  and sharing knowledge with the community.
+                  Outside of coding, I enjoy exploring new technologies, contributing to open-source projects, and continuously improving my skills.
                 </p>
               </div>
 
@@ -98,8 +90,8 @@ const About = () => {
                   <div className="text-sm text-muted-foreground">Semester IT Student</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold gradient-accent-text">5+</div>
-                  <div className="text-sm text-muted-foreground">Hackathons Won</div>
+                  <div className="text-2xl font-bold gradient-accent-text">8.25</div>
+                  <div className="text-sm text-muted-foreground">CGPA</div>
                 </div>
               </div>
             </div>
@@ -112,7 +104,7 @@ const About = () => {
             My Core Values
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map((value, index) => (
+            {values.map((value) => (
               <Card 
                 key={value.title} 
                 className="glass-card border-0 hover:shadow-card transition-all duration-300 hover:-translate-y-1 group text-center p-6"
@@ -139,7 +131,7 @@ const About = () => {
             Beyond Code: My Interests
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {interests.map((interest, index) => (
+            {interests.map((interest) => (
               <div 
                 key={interest.label}
                 className="flex flex-col items-center p-4 rounded-xl hover:bg-secondary/20 transition-all duration-300 group cursor-pointer"
