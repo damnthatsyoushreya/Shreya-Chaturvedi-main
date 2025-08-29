@@ -19,10 +19,11 @@ const Projects = () => {
       description: "Full-stack task management app with real-time updates, user authentication, and collaborative features. Built with MongoDB, Express, React, and Node.js.",
       image: "/api/placeholder/400/250",
       tech: ["React", "Node.js", "MongoDB", "Express"],
-      github: "#",
-      live: "#",
+      github: "https://github.com/damnthatsyoushreya/serene-task-grid-main",
+      live: "https://serene-task-grid-main.vercel.app/",
       featured: true
     },
+
     {
       title: "Weather App",
       description: "Beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics. Integrates multiple weather APIs.",
@@ -77,11 +78,10 @@ const Projects = () => {
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card 
-              key={project.title} 
-              className={`group hover:shadow-card transition-all duration-300 hover:-translate-y-2 glass-card border-0 overflow-hidden ${
-                project.featured ? 'ring-2 ring-primary/20' : ''
-              }`}
+            <Card
+              key={project.title}
+              className={`group hover:shadow-card transition-all duration-300 hover:-translate-y-2 glass-card border-0 overflow-hidden ${project.featured ? 'ring-2 ring-primary/20' : ''
+                }`}
             >
               {/* Project Image */}
               <div className="relative overflow-hidden">
@@ -109,9 +109,9 @@ const Projects = () => {
                 {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech) => (
-                    <Badge 
-                      key={tech} 
-                      variant="secondary" 
+                    <Badge
+                      key={tech}
+                      variant="secondary"
                       className="text-xs bg-secondary/50 hover:bg-secondary transition-colors"
                     >
                       {tech}
@@ -121,9 +121,9 @@ const Projects = () => {
               </CardContent>
 
               <CardFooter className="pt-0 flex gap-3">
-                <Button 
-                  variant="outline" 
-                  size="sm" 
+                <Button
+                  variant="outline"
+                  size="sm"
                   className="flex-1 group/btn hover:bg-primary hover:text-primary-foreground transition-all duration-300"
                   asChild
                 >
@@ -132,8 +132,8 @@ const Projects = () => {
                     Code
                   </a>
                 </Button>
-                <Button 
-                  size="sm" 
+                <Button
+                  size="sm"
                   className="flex-1 bg-gradient-primary hover:opacity-90 text-white border-0"
                   asChild
                 >
@@ -149,8 +149,8 @@ const Projects = () => {
 
         {/* View All Projects Button */}
         <div className="text-center mt-12">
-          <Button 
-            variant="outline" 
+          <Button
+            variant="outline"
             size="lg"
             className="border-2 border-primary/30 hover:bg-primary/5 transition-all duration-300 rounded-xl px-8 py-6 text-lg font-semibold"
           >
