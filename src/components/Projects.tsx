@@ -29,8 +29,8 @@ const Projects = () => {
       description: "Beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics. Integrates multiple weather APIs.",
       image: "/api/placeholder/400/250",
       tech: ["React", "API Integration", "Chart.js", "CSS"],
-      github: "#",
-      live: "#",
+      github: "https://github.com/damnthatsyoushreya/weather-mood-main",
+      live: "https://weather-mood-delta.vercel.app/",
       featured: false
     },
     {
