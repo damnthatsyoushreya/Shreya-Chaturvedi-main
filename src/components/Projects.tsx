@@ -10,8 +10,8 @@ const Projects = () => {
       description: "A modern, responsive portfolio built with React, TypeScript, and Tailwind CSS. Features dark mode, smooth animations, and glass-morphism design.",
       image: "/api/placeholder/400/250",
       tech: ["React", "TypeScript", "Tailwind", "Vite"],
-      github: "#",
-      live: "#",
+      github: "https://github.com/damnthatsyoushreya/Shreya-Chaturvedi-main",
+      live: "https://shreya-chaturvedi.vercel.app/",
       featured: true
     },
     {
