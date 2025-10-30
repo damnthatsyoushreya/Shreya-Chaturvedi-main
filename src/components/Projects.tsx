@@ -28,8 +28,8 @@ const Projects = () => {
         "Recharts",
         "Shadcn UI"
       ],
-      github: "https://github.com/damnthatsyoushreya/serene-task-grid-main",
-      live: "https://serene-task-grid-main.vercel.app/",
+      github: "https://github.com/damnthatsyoushreya/Evently",
+      live: "https://evently-beta-seven.vercel.app/",
       featured: true
     },
 
