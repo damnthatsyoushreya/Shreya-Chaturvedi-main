@@ -15,10 +15,19 @@ const Projects = () => {
       featured: true
     },
     {
-      title: "Task Manager (MERN)",
-      description: "Full-stack task management app with real-time updates, user authentication, and collaborative features. Built with MongoDB, Express, React, and Node.js.",
+      title: "Evently",
+      description: "Evently is a MERN + Supabase-powered platform for seamless event creation and RSVP management. It’s currently being enhanced with new dashboard features and design improvements.",
       image: "/api/placeholder/400/250",
-      tech: ["React", "Node.js", "MongoDB", "Express"],
+      tech: [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Supabase",
+        "TailwindCSS",
+        "Recharts",
+        "Shadcn UI"
+      ],
       github: "https://github.com/damnthatsyoushreya/serene-task-grid-main",
       live: "https://serene-task-grid-main.vercel.app/",
       featured: true
