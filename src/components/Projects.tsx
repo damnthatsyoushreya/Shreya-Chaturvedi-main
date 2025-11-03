@@ -88,10 +88,10 @@ const Projects = () => {
           {projects.map((project) => (
             <Card
               key={project.title}
-              className={`group hover:shadow-card transition-all duration-300 hover:-translate-y-2 glass-card border-0 overflow-hidden ${
-                project.featured ? "ring-2 ring-primary/20" : ""
-              }`}
+              className={`group hover:shadow-card transition-all duration-300 hover:-translate-y-2 glass-card border-0 overflow-hidden ${project.featured ? "ring-2 ring-primary/20" : ""
+                }`}
             >
+              {/* Desktop-style Project Preview */}
               {/* Desktop-style Project Preview */}
               <div className="w-full h-64 rounded-t-lg overflow-hidden relative bg-gray-100">
                 {project.live && project.live !== "#" ? (
@@ -106,8 +106,8 @@ const Projects = () => {
                     <iframe
                       src={project.live}
                       title={project.title}
-                      className="absolute top-0 left-0 w-[1440px] h-[900px] scale-[0.25] origin-top-left pointer-events-none"
-                      frameBorder="0"
+                      className="w-full h-full transform scale-[0.95] origin-top-left pointer-events-none"
+                      style={{ border: "0" }}
                     />
                   </>
                 ) : (
@@ -123,6 +123,7 @@ const Projects = () => {
                   </Badge>
                 )}
               </div>
+
 
               <CardHeader className="pb-4">
                 <CardTitle className="text-xl font-bold group-hover:text-primary transition-colors">
