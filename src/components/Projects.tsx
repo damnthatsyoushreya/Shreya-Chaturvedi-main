@@ -7,9 +7,8 @@ const Projects = () => {
   const projects = [
     {
       title: "Portfolio Website",
-      description:
-        "A modern, responsive portfolio built with React, TypeScript, and Tailwind CSS. Features dark mode, smooth animations, and glass-morphism design.",
-      image: "/projects/portfolio.png", // Add your screenshot here
+      description: "A modern, responsive portfolio built with React, TypeScript, and Tailwind CSS. Features dark mode, smooth animations, and glass-morphism design.",
+      image: "/api/placeholder/400/250",
       tech: ["React", "TypeScript", "Tailwind", "Vite"],
       github: "https://github.com/damnthatsyoushreya/Shreya-Chaturvedi-main",
       live: "https://shreya-chaturvedi.vercel.app/",
@@ -17,19 +16,27 @@ const Projects = () => {
     },
     {
       title: "Evently",
-      description:
-        "Evently is a MERN + Supabase-powered platform for seamless event creation and RSVP management.",
-      image: "/projects/evently.png",
-      tech: ["React", "Node.js", "Express", "MongoDB", "Supabase", "TailwindCSS", "Recharts"],
+      description: "Evently is a MERN + Supabase-powered platform for seamless event creation and RSVP management. It’s currently being enhanced with new dashboard features and design improvements.",
+      image: "/api/placeholder/400/250",
+      tech: [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Supabase",
+        "TailwindCSS",
+        "Recharts",
+        "Shadcn UI"
+      ],
       github: "https://github.com/damnthatsyoushreya/Evently",
       live: "https://evently-beta-seven.vercel.app/",
       featured: true
     },
+
     {
       title: "Weather App",
-      description:
-        "Beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics.",
-      image: "/projects/weather-app.png",
+      description: "Beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics. Integrates multiple weather APIs.",
+      image: "/api/placeholder/400/250",
       tech: ["React", "API Integration", "Chart.js", "CSS"],
       github: "https://github.com/damnthatsyoushreya/weather-mood-main",
       live: "https://weather-mood-delta.vercel.app/",
@@ -37,10 +44,27 @@ const Projects = () => {
     },
     {
       title: "E-commerce Store",
-      description:
-        "Modern e-commerce platform with shopping cart, payment integration, admin dashboard, and inventory management system.",
-      image: "/projects/ecommerce.png",
+      description: "Modern e-commerce platform with shopping cart, payment integration, admin dashboard, and inventory management system.",
+      image: "/api/placeholder/400/250",
       tech: ["React", "Node.js", "Stripe", "PostgreSQL"],
+      github: "#",
+      live: "#",
+      featured: false
+    },
+    {
+      title: "ChatBot AI Assistant",
+      description: "Intelligent chatbot with natural language processing, context awareness, and integration with multiple AI models for enhanced user interactions.",
+      image: "/api/placeholder/400/250",
+      tech: ["Python", "OpenAI", "FastAPI", "React"],
+      github: "#",
+      live: "#",
+      featured: false
+    },
+    {
+      title: "Social Media Dashboard",
+      description: "Analytics dashboard for social media management with real-time metrics, post scheduling, and performance insights across multiple platforms.",
+      image: "/api/placeholder/400/250",
+      tech: ["Vue.js", "D3.js", "Node.js", "Redis"],
       github: "#",
       live: "#",
       featured: false
@@ -62,23 +86,19 @@ const Projects = () => {
 
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
+          {projects.map((project, index) => (
             <Card
               key={project.title}
-              className={`group hover:shadow-card transition-all duration-300 hover:-translate-y-2 glass-card border-0 overflow-hidden ${
-                project.featured ? "ring-2 ring-primary/20" : ""
-              }`}
+              className={`group hover:shadow-card transition-all duration-300 hover:-translate-y-2 glass-card border-0 overflow-hidden ${project.featured ? 'ring-2 ring-primary/20' : ''
+                }`}
             >
-              {/* Project Screenshot */}
-              <div className="w-full h-64 rounded-t-lg overflow-hidden relative bg-gray-100">
-                <img
-                  src={project.image}
-                  alt={`${project.title} Screenshot`}
-                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
-                />
-
+              {/* Project Image */}
+              <div className="relative overflow-hidden">
+                <div className="w-full h-48 bg-gradient-accent rounded-t-lg flex items-center justify-center">
+                  <div className="text-6xl opacity-50">🚀</div>
+                </div>
                 {project.featured && (
-                  <Badge className="absolute top-4 right-4 bg-gradient-primary text-white border-0 z-10">
+                  <Badge className="absolute top-4 right-4 bg-gradient-primary text-white border-0">
                     <Star className="w-3 h-3 mr-1" />
                     Featured
                   </Badge>
