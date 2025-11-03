@@ -92,23 +92,32 @@ const Projects = () => {
                 project.featured ? "ring-2 ring-primary/20" : ""
               }`}
             >
-              {/* Project Preview */}
-              <div className="w-full h-48 rounded-t-lg overflow-hidden">
+              {/* Desktop-style Project Preview */}
+              <div className="w-full h-64 rounded-t-lg overflow-hidden relative bg-gray-100">
                 {project.live && project.live !== "#" ? (
-                  <iframe
-                    src={project.live}
-                    title={project.title}
-                    className="w-full h-full hover:scale-105 transition-transform duration-300 shadow-md"
-                    frameBorder="0"
-                    allowFullScreen
-                  />
+                  <>
+                    {/* Desktop frame dots */}
+                    <div className="absolute top-2 left-4 flex space-x-2 z-10">
+                      <span className="w-3 h-3 bg-red-500 rounded-full"></span>
+                      <span className="w-3 h-3 bg-yellow-500 rounded-full"></span>
+                      <span className="w-3 h-3 bg-green-500 rounded-full"></span>
+                    </div>
+
+                    <iframe
+                      src={project.live}
+                      title={project.title}
+                      className="absolute top-0 left-0 w-[1440px] h-[900px] scale-[0.25] origin-top-left pointer-events-none"
+                      frameBorder="0"
+                    />
+                  </>
                 ) : (
                   <div className="w-full h-full flex items-center justify-center bg-gradient-accent">
                     <div className="text-6xl opacity-50">🚀</div>
                   </div>
                 )}
+
                 {project.featured && (
-                  <Badge className="absolute top-4 right-4 bg-gradient-primary text-white border-0">
+                  <Badge className="absolute top-4 right-4 bg-gradient-primary text-white border-0 z-10">
                     <Star className="w-3 h-3 mr-1" />
                     Featured
                   </Badge>
