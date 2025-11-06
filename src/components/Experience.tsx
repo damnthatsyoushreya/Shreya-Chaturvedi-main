@@ -5,10 +5,10 @@ import { Trophy, Users, Code, Zap } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      year: "2024 – Present",
+      year: "March 2024 – August 2025",
       title: "Front End Developer (Part Time)",
       organization: "Smart Tech Info Craft, Ahmedabad",
-      type: "Work",
+      type: "Frontend Developer",
       description:
         "Converted UI/UX designs into responsive HTML, CSS, and Bootstrap layouts. Ensured cross-browser compatibility and collaborated with the design team to maintain visual integrity.",
       achievements: [
@@ -39,12 +39,12 @@ const Experience = () => {
     {
       year: "2024",
       title: "Smart India Hackathon – Team Lead",
-      organization: "Delhi Transport Corporation Project",
+      organization: "SIH 2024",
       type: "Hackathon",
       description:
         "Led a team to develop 'Yatra', an Automated Bus Scheduling & Route Management System. Proposed dynamic route adjustments during emergencies and eco-friendly route optimization.",
       achievements: [
-        "Selected and approved for SIH 2024",
+        "Selected for SIH 2024",
         "Developed real-world transport solution prototype",
         "Led cross-functional hackathon team to success"
       ],
@@ -53,19 +53,18 @@ const Experience = () => {
       color: "from-yellow-500 to-orange-500",
     },
     {
-      year: "2022",
-      title: "Freelance & Academic Projects",
-      organization: "Personal / Academic",
-      type: "Projects",
+      year: "2025",
+      title: "Smart India Hackathon - Data Analyst",
+      organization: "SIH 2025",
+      type: "Hackathon",
       description:
-        "Worked on freelance and academic projects to strengthen portfolio and practical skills in full-stack development and UI/UX design.",
+        "Worked on Data related challenges, analyzing large datasets to extract insights and inform decision-making. Collaborated with team members to develop data-driven solutions.",
       achievements: [
-        "Way To Interior – platform connecting clients with designers",
-        "Single Page Application – authentication & data fetching",
-        "Abyss Skills – e-learning platform with offline access",
-        "App Clone – social media prototype in Figma"
+        "Selected and approved for SIH 2025",
+        "Developed data-driven solutions for real-world problems",
+        "Collaborated effectively within a multidisciplinary team"
       ],
-      skills: ["React.js", "JavaScript", "MySQL", "Figma", "Problem-Solving"],
+      skills: ["PowerBI", "Flask", "MySQL", "Figma", "Problem-Solving"],
       icon: Users,
       color: "from-pink-500 to-rose-500",
     },

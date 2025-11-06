@@ -34,12 +34,13 @@ const Projects = () => {
     },
 
     {
-      title: "Weather App",
-      description: "Beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics. Integrates multiple weather APIs.",
+      title: "Social Media Dashboard",
+      description: "Analytics dashboard for social media management with real-time metrics, post scheduling, and performance insights across multiple platforms.",
       image: "/api/placeholder/400/250",
-      tech: ["React", "API Integration", "Chart.js", "CSS"],
-      github: "https://github.com/damnthatsyoushreya/weather-mood-main",
-      live: "https://weather-mood-delta.vercel.app/",
+      tech: ["Vue.js", "D3.js", "Node.js", "Redis"],
+      github: "#",
+      live: "#",
+      // https://smart-moderation-dashboard.vercel.app/
       featured: false
     },
     {
