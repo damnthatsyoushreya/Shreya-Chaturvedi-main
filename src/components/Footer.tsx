@@ -25,8 +25,8 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-2xl font-bold gradient-text">Shreya</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Frontend & Full-Stack Developer passionate about creating beautiful, 
-              functional web experiences and leading teams to success.
+              Full-Stack Developer passionate about creating beautiful, 
+              functional web experiences and passionate about Data Analysis.
             </p>
             <div className="flex gap-4">
               <div className="text-sm text-muted-foreground">
@@ -41,8 +41,8 @@ const Footer = () => {
             <nav className="space-y-2">
               {[
                 { label: "About", href: "" },
-                { label: "Projects", href: "#projects" },
-                { label: "Experience", href: "#experience" },
+                { label: "Projects", href: "src/components/projects.tsx" },
+                { label: "Experience", href: "#" },
                 { label: "Contact", href: "#contact" }
               ].map((link) => (
                 <a
@@ -69,10 +69,10 @@ const Footer = () => {
                 </span>
               ))}
             </div>
-            <p className="text-sm text-muted-foreground">
+            {/* <p className="text-sm text-muted-foreground">
               This portfolio showcases modern web development practices with a focus on performance, 
               accessibility, and user experience.
-            </p>
+            </p> */}
           </div>
         </div>
 
