@@ -73,15 +73,19 @@ const About = () => {
             <div className="glass-card rounded-2xl p-8 space-y-6">
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p className="text-lg">
-                  I'm <span className="text-primary font-semibold">Shreya</span>, a 7th Semester IT student with a passion for building modern web applications. I enjoy learning new technologies and applying them to real-world projects.
+                  I'm <span className="text-primary font-semibold">Shreya</span>, a 7th Semester IT student passionate about building <span className="font-semibold">full-stack web applications</span> and leveraging <span className="font-semibold">data analysis</span> to solve real-world problems. I enjoy learning new technologies and applying them to both development and analytical projects.
                 </p>
 
                 <p>
-                  I have experience participating in events like <span className="text-accent font-semibold">SIH 2024</span> and working on personal and freelance web development projects. These experiences helped me strengthen my problem-solving skills and collaborative abilities.
+                  I have hands-on experience working on personal, freelance, and academic web development projects, as well as participating in national hackathons like <span className="text-accent font-semibold">SIH 2024</span> and <span className="text-accent font-semibold">SIH 2025</span>, where I was selected to contribute as a <span className="font-semibold">Data Analyst</span>. In these experiences, I analyzed large datasets, extracted actionable insights, and collaborated with multidisciplinary teams to develop <span className="font-semibold">data-driven solutions</span>.
                 </p>
 
                 <p>
-                  Outside of coding, I enjoy exploring new technologies, contributing to open-source projects, and continuously improving my skills.
+                  My technical toolkit includes <span className="font-semibold">React, Node.js, Python, PostgreSQL, and Power BI</span>, allowing me to create modern web applications while also performing <span className="font-semibold">data visualization, reporting, and statistical analysis</span>.
+                </p>
+
+                <p>
+                  Beyond coding and data work, I enjoy exploring emerging technologies, contributing to open-source projects, and continuously improving my skills to deliver efficient, practical, and scalable solutions.
                 </p>
               </div>
 
@@ -98,6 +102,7 @@ const About = () => {
               </div>
             </div>
           </div>
+
         </div>
 
         {/* Values Grid */}
