@@ -65,7 +65,7 @@ const Experience = () => {
         "Collaborated effectively within a multidisciplinary team"
       ],
       skills: ["PowerBI", "Flask", "MySQL", "Figma", "Problem-Solving"],
-      icon: Users,
+      icon: Trophy,
       color: "from-pink-500 to-rose-500",
     },
   ];
