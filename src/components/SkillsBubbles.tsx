@@ -9,7 +9,7 @@ const SkillsBubbles = () => {
     { name: "Python", icon: "🐍", color: "from-blue-500 to-yellow-500" },
     { name: "Git", icon: "📚", color: "from-orange-500 to-red-500" },
     { name: "PostgreSQL", icon: "🐘", color: "from-blue-700 to-indigo-800" },
-
+    { name: "Power BI", icon: "📊", color: "from-green-400 to-teal-500" }, // new skill added
   ];
 
   return (
