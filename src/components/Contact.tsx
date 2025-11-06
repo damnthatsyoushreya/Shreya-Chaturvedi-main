@@ -96,16 +96,14 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-16 px-4 bg-gradient-to-b from-transparent to-secondary/20">
+    <section id="contact" className="min-h-screen py-12 px-4 bg-gradient-to-b from-transparent to-secondary/20">
       <div className="max-w-6xl mx-auto">
-        {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-4 leading-tight">
             Let's Work Together
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Have a project in mind? Looking for a team lead for your next hackathon? 
-            Or just want to chat about tech? I'd love to hear from you!
+            Have a project in mind? Looking for a team lead for your next hackathon? Or just want to chat about tech? I'd love to hear from you!
           </p>
         </div>
 
@@ -159,8 +157,8 @@ const Contact = () => {
                   className="bg-background/50 border-border/50 focus:border-primary transition-colors resize-none"
                 />
 
-                <Button 
-                  type="submit" 
+                <Button
+                  type="submit"
                   className="w-full bg-gradient-primary hover:opacity-90 text-white border-0 rounded-xl py-4 text-lg font-semibold shadow-glow flex items-center justify-center gap-2"
                 >
                   <Send className="w-4 h-4" />

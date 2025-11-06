@@ -1,7 +1,6 @@
 const SkillsBubbles = () => {
   const skills = [
     { name: "React", icon: "⚛️", color: "from-blue-400 to-cyan-400" },
-    { name: "TypeScript", icon: "🔷", color: "from-blue-600 to-blue-800" },
     { name: "Tailwind", icon: "🎨", color: "from-cyan-400 to-blue-500" },
     { name: "Node.js", icon: "🟢", color: "from-green-500 to-emerald-600" },
     { name: "MongoDB", icon: "🍃", color: "from-green-600 to-green-800" },
