@@ -66,7 +66,7 @@ const Experience = () => {
       ],
       skills: ["PowerBI", "Flask", "MySQL", "Figma", "Problem-Solving"],
       icon: Trophy,
-      color: "from-pink-500 to-rose-500",
+      color: "from-yellow-500 to-orange-500",
     },
   ];
 
