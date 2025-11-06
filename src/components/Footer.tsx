@@ -41,7 +41,7 @@ const Footer = () => {
             <nav className="space-y-2">
               {[
                 { label: "About", href: "" },
-                { label: "Projects", href: "src/components/projects.tsx" },
+                { label: "Projects", href: "" },
                 { label: "Experience", href: "#" },
                 { label: "Contact", href: "#contact" }
               ].map((link) => (
