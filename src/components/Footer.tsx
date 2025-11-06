@@ -40,9 +40,9 @@ const Footer = () => {
             <h4 className="text-lg font-semibold gradient-accent-text">Quick Links</h4>
             <nav className="space-y-2">
               {[
-                { label: "About", href: "" },
-                { label: "Projects", href: "" },
-                { label: "Experience", href: "#" },
+                { label: "About", href: "#about" },
+                { label: "Projects", href: "#projects" },
+                { label: "Experience", href: "#experience" },
                 { label: "Contact", href: "#contact" }
               ].map((link) => (
                 <a
