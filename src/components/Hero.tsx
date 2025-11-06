@@ -52,13 +52,13 @@ const Hero = () => {
               Hi, I'm <span className="gradient-text">Shreya</span> 👋
             </h1>
             <div className="text-xl md:text-2xl text-muted-foreground space-y-2">
-              <p className="gradient-accent-text font-semibold">Frontend & Full-Stack Developer</p>
+              <p className="gradient-accent-text font-semibold">Full-Stack Developer & Data Analyst</p>
             </div>
           </div>
 
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-  I build modern web applications with clean and efficient code. I enjoy learning new technologies and recently participated in SIH 2024, where I collaborated with peers to solve real-world tech challenges.
+  I build modern, responsive web applications with clean, efficient code — and analyze data to uncover insights that drive smarter decisions. I enjoy learning new technologies and recently participated in SIH 2025, where I collaborated with peers to solve real-world challenges through technology and analytics.
 </p>
 
 
