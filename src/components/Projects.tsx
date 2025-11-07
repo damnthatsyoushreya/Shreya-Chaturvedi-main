@@ -35,41 +35,40 @@ const Projects = () => {
 
     {
       title: "Social Media Dashboard",
-      description: "Analytics dashboard for social media management with real-time metrics, post scheduling, and performance insights across multiple platforms.",
+      description: "STILL UNDER DEVELOPMENT Analytics dashboard for social media management with real-time metrics, post scheduling, and performance insights across multiple platforms.",
       image: "/api/placeholder/400/250",
       tech: ["Vue.js", "D3.js", "Node.js", "Redis"],
       github: "#",
-      live: "#",
-      // https://smart-moderation-dashboard.vercel.app/
+      live: "https://smart-moderation-dashboard.vercel.app/",
       featured: false
     },
-    {
-      title: "E-commerce Store",
-      description: "Modern e-commerce platform with shopping cart, payment integration, admin dashboard, and inventory management system.",
-      image: "/api/placeholder/400/250",
-      tech: ["React", "Node.js", "Stripe", "PostgreSQL"],
-      github: "#",
-      live: "#",
-      featured: false
-    },
-    {
-      title: "ChatBot AI Assistant",
-      description: "Intelligent chatbot with natural language processing, context awareness, and integration with multiple AI models for enhanced user interactions.",
-      image: "/api/placeholder/400/250",
-      tech: ["Python", "OpenAI", "FastAPI", "React"],
-      github: "#",
-      live: "#",
-      featured: false
-    },
-    {
-      title: "Social Media Dashboard",
-      description: "Analytics dashboard for social media management with real-time metrics, post scheduling, and performance insights across multiple platforms.",
-      image: "/api/placeholder/400/250",
-      tech: ["Vue.js", "D3.js", "Node.js", "Redis"],
-      github: "#",
-      live: "#",
-      featured: false
-    }
+    // {
+    //   title: "E-commerce Store",
+    //   description: "Modern e-commerce platform with shopping cart, payment integration, admin dashboard, and inventory management system.",
+    //   image: "/api/placeholder/400/250",
+    //   tech: ["React", "Node.js", "Stripe", "PostgreSQL"],
+    //   github: "#",
+    //   live: "#",
+    //   featured: false
+    // },
+    // {
+    //   title: "ChatBot AI Assistant",
+    //   description: "Intelligent chatbot with natural language processing, context awareness, and integration with multiple AI models for enhanced user interactions.",
+    //   image: "/api/placeholder/400/250",
+    //   tech: ["Python", "OpenAI", "FastAPI", "React"],
+    //   github: "#",
+    //   live: "#",
+    //   featured: false
+    // },
+    // {
+    //   title: "Social Media Dashboard",
+    //   description: "Analytics dashboard for social media management with real-time metrics, post scheduling, and performance insights across multiple platforms.",
+    //   image: "/api/placeholder/400/250",
+    //   tech: ["Vue.js", "D3.js", "Node.js", "Redis"],
+    //   github: "#",
+    //   live: "#",
+    //   featured: false
+    // }
   ];
 
   return (
@@ -158,7 +157,7 @@ const Projects = () => {
         </div>
 
         {/* View All Projects Button */}
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <Button
             variant="outline"
             size="lg"
@@ -167,7 +166,7 @@ const Projects = () => {
             View All Projects on GitHub
             <Github className="w-5 h-5 ml-2" />
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
